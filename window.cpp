@@ -149,6 +149,9 @@ void Window::points_up(){
 void Window::points_down(){
     n = n / 2;
     if (n >= 3) update();
+    else{
+        n = n * 2;
+    }
 }
 
 void Window::delta_up()
